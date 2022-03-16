@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    background:#050d1a;
+}
+.navigiation {
+    height:50px;
+    background:black;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 0px 80px 0px 100px;
+    width:100%;
+    border-bottom: 1px solid white;
+    
+  
+
+}
+
+.logo{
+    background:linear-gradient(to left,white,white,#e7fc7c,#2cf250,#039dfc,#5603fc,#e303fc,#fc036f,#fc030b);
+    
+    -webkit-text-fill-color: transparent;
+-webkit-background-clip: text; 
+    font-weight:600;
+    font-size:33px;
+    font-family:'Ubuntu',sans-serif;
+    background-clip: text;
+
+    }
+   
+nav ul{
+    display:flex;
+   list-style:none;
+   
+    }
+    nav ul li{
+        margin:0px 10px 0px 10px;
+        
+    }
+        nav ul li:hover, nav ul li a.active{ 
+        background:#1ba1f5;
+        padding: 0px 0px;
+        border-radius:5px;
+        letter-spacing: 2px;
+        transition:all 0.5s ease;
+        
+     }    
+
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-size:18px;
+    font-weight:500;
+}
+@media(max-width: 730px){
+    .logo{
+        align-items:center;
+        justify-content:center;
+    
+        position:fixed;
+        
+    }
+    
+    nav ul{
+        height:100vh;
+        width:100%;
+        position:fixed;
+        background:black;
+         left:0;
+        top:50px;
+      
+        display:block;
+        text-align: center;
+        justify-content:center;
+        align-items:center;
+        
+
+    }
+    nav ul li a{
+        font-size:30px;
+    }
+    
+        nav ul li{
+            margin:30px 10px 0px 10px;
+            
+        }
+    
+    nav ul li a:hover{
+      color:white;
+    }
+
+}
